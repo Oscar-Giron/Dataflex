@@ -1,0 +1,117 @@
+﻿Use cWebView.pkg
+Use cWebPanel.pkg
+Use cWebForm.pkg
+Use cWebButton.pkg
+Use cWebGroup.pkg
+Use cWebSpacer.pkg
+Use cWebHtmlBox.pkg
+Use cWebMenuGroup.pkg
+Use cWebMenuItem.pkg
+Use cWebLabel.pkg
+Use cWebList.pkg
+Use cWebColumn.pkg
+
+// 1. Registramos los objetos para que el compilador sepa que existen
+Register_Object oLigas
+Register_Object oEquipos
+Register_Object oJugadores
+Register_Object oEntrenadores
+Register_Object oPosicion
+
+Object oDashboard is a cWebView
+    Set piMaxWidth to 1024
+    Set psCaption to "Dashboard"
+    Set peViewType to vtUndefined
+    Set pbShowCaption to False
+    Set psCSSClass to "Dashboard"
+
+    // 2. Registramos las rutas por si DataFlex las pide internamente
+    WebRegisterPath ntNavigateForward oLigas
+    WebRegisterPath ntNavigateForward oEquipos
+    WebRegisterPath ntNavigateForward oJugadores
+    WebRegisterPath ntNavigateForward oEntrenadores
+    WebRegisterPath ntNavigateForward oPosicion
+
+    Object oWebMainPanel is a cWebPanel
+        Set piColumnCount to 24
+        WebSetResponsive piColumnCount rmMobile to 1
+        WebSetResponsive piColumnCount rmTabletPortrait to 16
+    
+        Object oTiles_grp is a cWebGroup
+            Set piColumnSpan to 8
+            Set pbShowBorder to False
+            Set pbShowCaption to False
+            Set piColumnCount to 12
+            Set psCSSClass to "TilesGroup"
+    
+            // --- BIENVENIDA ---
+            Object oWelcomeTile is a cWebHtmlBox
+                Set piColumnSpan to 6
+                Set psCSSClass to "Tile Light"
+                Set psHtml to '<div Class="WebCon_Sizer"><div class="Tile_Title">Bienvenido</div></div>'
+            End_Object
+
+            // --- BOTÓN LIGAS ---
+            Object oTileLigas is a cWebHtmlBox
+                Set piColumnSpan to 6
+                Set pbServerOnClick to True
+                Set psCSSClass to "Tile LightAlternate"
+                Set psHtml to '<div class="WebCon_Sizer" data-ServerOnClick="open"><div Class="Tile_Title">Ligas</div></div>'
+                
+                Procedure OnClick String sId String sParam
+                    Send Show of oLigas
+                End_Procedure
+            End_Object
+
+            // --- BOTÓN EQUIPOS ---
+            Object oTileEquipos is a cWebHtmlBox
+                Set piColumnSpan to 6
+                Set pbServerOnClick to True
+                Set psCSSClass to "Tile Dark"
+                Set psHtml to '<div class="WebCon_Sizer" data-ServerOnClick="open"><div Class="Tile_Title">Equipos</div></div>'
+                
+                Procedure OnClick String sId String sParam
+                    Send Show of oEquipos
+                End_Procedure
+            End_Object
+
+            // --- BOTÓN JUGADORES ---
+            Object oTileJugadores is a cWebHtmlBox
+                Set piColumnSpan to 6
+                Set pbServerOnClick to True
+                Set psCSSClass to "Tile DarkAlternate"
+                Set psHtml to '<div class="WebCon_Sizer" data-ServerOnClick="open"><div Class="Tile_Title">Jugadores</div></div>'
+                
+                Procedure OnClick String sId String sParam
+                    Send Show of oJugadores
+                End_Procedure
+            End_Object
+
+            // --- BOTÓN ENTRENADORES ---
+            Object oTileEntrenadores is a cWebHtmlBox
+                Set piColumnSpan to 6
+                Set pbServerOnClick to True
+                Set psCSSClass to "Tile Light"
+                Set psHtml to '<div class="WebCon_Sizer" data-ServerOnClick="open"><div Class="Tile_Title">Entrenadores</div></div>'
+                
+                Procedure OnClick String sId String sParam
+                    Send Show of oEntrenadores
+                End_Procedure
+            End_Object
+
+            // --- BOTÓN POSICIONES ---
+            Object oTilePosicion is a cWebHtmlBox
+                Set piColumnSpan to 6
+                Set pbServerOnClick to True
+                Set psCSSClass to "Tile LightAlternate"
+                Set psHtml to '<div class="WebCon_Sizer" data-ServerOnClick="open"><div Class="Tile_Title">Posiciones</div></div>'
+                
+                Procedure OnClick String sId String sParam
+                    Send Show of oPosicion
+                End_Procedure
+            End_Object
+
+        End_Object
+    End_Object
+
+End_Object
