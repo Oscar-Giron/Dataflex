@@ -1,0 +1,163 @@
+[Workspace]
+CurrentProject=WebApp.src
+Location=C:\DataFlex Projects\FutbolWebApp1\IdeSrc\yo_os_Studio.dsk
+CreateNew=3
+[TabWindows]
+GroupCount=1
+HorizontalGroups=1
+[TabGroup0]
+GroupSize=40
+SelectedTab=9
+[Window0]
+Filename=Workspace Dashboard
+ViewType=101
+Top=21
+Left=0
+Bottom=718
+Right=1428
+TabIndex=0
+TabGroup=0
+[Window1]
+Filename=C:\DataFlex Projects\FutbolWebApp1\AppSrc\WebApp.src
+ViewType=1
+Top=21
+Left=0
+Bottom=718
+Right=1428
+CursorLine=13
+CursorColumn=34
+TabIndex=1
+TabGroup=0
+[Window2]
+Filename=C:\DataFlex Projects\FutbolWebApp1\DDSrc\cligaDataDictionary.dd
+ViewType=1
+Top=21
+Left=0
+Bottom=718
+Right=1428
+CursorLine=0
+CursorColumn=0
+TabIndex=2
+TabGroup=0
+[Window3]
+Filename=C:\DataFlex Projects\FutbolWebApp1\DDSrc\cposicionDataDictionary.dd
+ViewType=3
+Top=21
+Left=0
+Bottom=718
+Right=1428
+TabIndex=3
+TabGroup=0
+[Window4]
+Filename=C:\DataFlex Projects\FutbolWebApp1\DDSrc\cjugadorDataDictionary.dd
+ViewType=3
+Top=21
+Left=0
+Bottom=718
+Right=1428
+TabIndex=4
+TabGroup=0
+[Window5]
+Filename=C:\DataFlex Projects\FutbolWebApp1\DDSrc\cequipoDataDictionary.dd
+ViewType=3
+Top=21
+Left=0
+Bottom=718
+Right=1428
+TabIndex=5
+TabGroup=0
+[Window6]
+Filename=C:\DataFlex Projects\FutbolWebApp1\DDSrc\centrenadorDataDictionary.dd
+ViewType=3
+Top=21
+Left=0
+Bottom=718
+Right=1428
+TabIndex=6
+TabGroup=0
+[Window7]
+Filename=C:\DataFlex Projects\FutbolWebApp1\AppSrc\Jugadores.wo
+ViewType=1
+Top=21
+Left=0
+Bottom=718
+Right=1428
+CursorLine=61
+CursorColumn=0
+TabIndex=7
+TabGroup=0
+[Window8]
+Filename=WebAppUser
+ViewType=5
+Top=21
+Left=0
+Bottom=718
+Right=1428
+TabIndex=8
+TabGroup=0
+[Window9]
+Filename=C:\DataFlex Projects\FutbolWebApp1\AppSrc\Equipos.wo
+ViewType=1
+Top=21
+Left=0
+Bottom=718
+Right=1428
+CursorLine=16
+CursorColumn=44
+TabIndex=10
+TabGroup=0
+[Window10]
+Filename=C:\DataFlex Projects\FutbolWebApp1\AppSrc\Entrenadores.wo
+ViewType=1
+Top=21
+Left=0
+Bottom=718
+Right=1428
+CursorLine=0
+CursorColumn=0
+TabIndex=11
+TabGroup=0
+[Window11]
+Filename=C:\DataFlex Projects\FutbolWebApp1\AppSrc\Posicion.wo
+ViewType=1
+Top=21
+Left=0
+Bottom=718
+Right=1428
+CursorLine=0
+CursorColumn=56
+TabIndex=12
+TabGroup=0
+[Window12]
+Filename=C:\DataFlex Projects\FutbolWebApp1\AppSrc\Ligas.wo
+ViewType=1
+Top=21
+Left=0
+Bottom=718
+Right=1428
+CursorLine=13
+CursorColumn=0
+TabIndex=13
+TabGroup=0
+[Window13]
+Filename=C:\Program Files\DataFlex 25.0\Pkg\cWebNavPathHelper_mixin.pkg
+ViewType=1
+Top=21
+Left=0
+Bottom=718
+Right=1428
+CursorLine=161
+CursorColumn=0
+TabIndex=14
+TabGroup=0
+[Window14]
+Filename=C:\DataFlex Projects\FutbolWebApp1\AppSrc\Dashboard.wo
+ViewType=1
+Top=21
+Left=0
+Bottom=718
+Right=1428
+CursorLine=116
+CursorColumn=10
+TabIndex=9
+TabGroup=0
